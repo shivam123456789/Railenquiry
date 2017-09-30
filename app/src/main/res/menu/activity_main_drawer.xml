@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/pnr"
+            android:title="PNR Status" />
+        <item
+            android:id="@+id/trainroute"
+
+            android:title="Train Route" />
+        <item
+
+            android:title="Live Train Status"
+            android:id="@+id/livetrain" />
+        <item
+            android:id="@+id/seat"
+
+            android:title="Seat Availability" />
+        <item
+            android:id="@+id/stcode"
+
+            android:title="Station Name" />
+    </group>
+
+
+
+</menu>

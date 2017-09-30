@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.swaraj.railenquiry.seat"
+    android:id="@+id/seat"
+    android:layout_marginTop="70dp">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/e1"
+        android:hint="Train no."
+        android:layout_width="80dp"
+        android:textStyle="normal|bold" />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/e2"
+        android:hint="From"
+        android:layout_width="70dp"
+        android:layout_alignBaseline="@+id/e1"
+        android:layout_alignBottom="@+id/e1"
+        android:layout_centerHorizontal="true"
+        android:textStyle="normal|bold" />
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/e3"
+        android:hint="To"
+        android:layout_alignBaseline="@+id/e2"
+        android:layout_alignBottom="@+id/e2"
+        android:layout_toRightOf="@+id/e2"
+        android:layout_toEndOf="@+id/e2"
+        android:layout_marginLeft="38dp"
+        android:layout_marginStart="38dp"
+        android:textStyle="normal|bold" />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:layout_marginTop="11dp"
+        android:id="@+id/e4"
+        android:hint="dd-mm-yyyy"
+        android:layout_below="@+id/e1"
+        android:layout_alignLeft="@+id/e1"
+        android:layout_alignStart="@+id/e1"
+        android:textStyle="normal|bold"
+        android:layout_width="110dp" />
+
+    <Button
+        android:text="Check Seat Availability"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:id="@+id/b"
+        android:layout_below="@+id/e4"
+        android:layout_alignRight="@+id/e3"
+        android:layout_alignEnd="@+id/e3"
+        android:layout_marginRight="38dp"
+        android:layout_marginEnd="38dp" />
+
+    <Spinner
+        android:layout_height="wrap_content"
+        android:id="@+id/P"
+        android:entries="@array/Quota"
+        android:layout_width="wrap_content"
+        android:layout_alignBaseline="@+id/s"
+        android:layout_alignBottom="@+id/s"
+        android:layout_alignLeft="@+id/e3"
+        android:layout_alignStart="@+id/e3" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/s"
+        android:entries="@array/clas_h"
+        android:layout_alignBaseline="@+id/e4"
+        android:layout_alignBottom="@+id/e4"
+        android:layout_alignLeft="@+id/e2"
+        android:layout_alignStart="@+id/e2" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="91dp"
+        android:id="@+id/t"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/e4"
+        android:layout_toEndOf="@+id/e4"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp" />
+
+</RelativeLayout>

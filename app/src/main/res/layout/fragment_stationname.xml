@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.swaraj.railenquiry.stationname"
+    android:id="@+id/station"
+    android:layout_marginTop="70dp">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Button
+        android:id="@+id/b"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/e"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:text="Convert" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="17dp"
+        android:id="@+id/e"
+        android:hint="Station Name"
+        android:layout_below="@+id/t"
+        android:layout_toLeftOf="@+id/b"
+        android:layout_toStartOf="@+id/b"
+        android:layout_marginRight="13dp"
+        android:layout_marginEnd="13dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/e"
+        android:layout_marginTop="31dp"
+        android:id="@+id/te"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list"
+        android:layout_below="@+id/e">
+
+    </ListView>
+
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.swaraj.railenquiry.LIVETRAIN"
+    android:background="@android:color/white"
+    android:layout_marginTop="70dp">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/t1"
+        android:id="@+id/L"
+        android:divider="@android:color/black"
+       />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/date"
+        android:hint="YYYYMMDD"
+        android:layout_width="120dp"
+        android:layout_alignBaseline="@+id/wraptrno"
+        android:layout_alignBottom="@+id/wraptrno"
+        android:layout_centerHorizontal="true"
+        android:textStyle="normal|bold" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:id="@+id/wraptrno"
+        android:layout_height="wrap_content"
+        >
+    <EditText
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/trno"
+        android:layout_marginTop="25dp"
+        android:hint="Train no"
+        android:layout_width="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/date"
+        android:layout_toStartOf="@+id/date"
+        android:layout_marginRight="13dp"
+        android:layout_marginEnd="13dp"
+        android:textStyle="normal|bold" />
+</android.support.design.widget.TextInputLayout>
+    <Button
+        android:text="GET STATUS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/B"
+        android:layout_alignTop="@+id/date"
+        android:layout_toRightOf="@+id/date"
+        android:layout_toEndOf="@+id/date"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/B"
+        android:layout_alignRight="@+id/B"
+        android:layout_alignEnd="@+id/B"
+        android:layout_marginTop="16dp"
+        android:id="@+id/t1"
+        android:fontFamily="monospace"
+        android:textColor="@android:color/holo_green_light" />
+
+</RelativeLayout>
